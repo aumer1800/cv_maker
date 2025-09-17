@@ -21,8 +21,8 @@ body{
 
 .image_figure_data{
     width: 20%;
-    height: 30vh;
-    background-color: white;
+    aspect-ratio: 1/1;   
+ background-color: white;
     border-radius: 50%;
 }
 
@@ -79,11 +79,15 @@ body{
 }
 
 @media(max-width:992px){
-    .list_data{
-        justify-content: start;
-    }
+   
     .item{
         width: 48%;
+    }
+    .person_data{
+        width: 65%;
+    }
+    .image_figure_data {
+    width: 35%;
     }
 }
 
@@ -105,19 +109,19 @@ body{
         width: 48%;
     }
 .list_data .item:last-child{
-    width: 96%;
+    width: 100%;
 }
-    .image_figure_data {
-    width: 30%;
-    height: 20vh;
-    }
+    
 }
 @media(max-width:550px){
 .item{
-        width: 96%;
+        width: 100%;
     }
-        .image_figure_data {
+    .image_figure_data {
+    width: 30%;
+    }
+        /* .image_figure_data {
         width: 46%;
         height: 15vh;
-    }
+    } */
 }
