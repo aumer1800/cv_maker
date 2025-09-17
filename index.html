@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cv Form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="main_content">
+            <h1>Welcome!</h1>
+            <h2>Create Your Own CV</h2>
+        </div>
+
+        <div class="cv_design">
+            <h1 class="personal_info">Personal Information</h1>
+
+            <!-- cv information-->
+            <div class="cv_container">
+
+                <div class="profile">
+                    <figure class="profile_figure">
+                        <img class="profile_image" src="./assets/images/profile_pic.webp" alt="">
+                    </figure>
+                    <input id ='image'class="image_file" type="file" id="fileInput" />
+                </div>
+
+                <div class="content_container">
+                    <!-- names fields -->
+                    <div class="input_field">
+                        <div class="first_name">
+                            <label>First Name</label><input class="fname" type="text" placeholder="e.g Umer">
+                        </div>
+                        <div class="last_name">
+                            <label>Last Name</label><input class="lname" type="text" placeholder="e.g Ali">
+                        </div>
+                    </div>
+
+                    <!-- description -->
+                    <div class="description">
+                        <label class="description_label" for="About Me">About Me</label>
+                        <textarea class="description_area" placeholder="Enter Your Description"></textarea>
+                    </div>
+
+                    <!-- date of birth -->
+                    <div class="dateofbirth">
+                        <label for="">Date of Birth</label>
+                        <input id='date' type="date">
+                    </div>
+
+                    <!-- place of birth -->
+                    <div class="placeofbirth">
+                        <label for="">Place of Birth</label>
+                        <div class="place_name">
+                            <input id="city" type="text" placeholder="City">
+                            <input id="country" type="text" placeholder="Country">
+                        </div>
+                    </div>
+
+
+                    <!-- gender info-->
+                    <div class="gender_info">
+
+                        <div class="nationality">
+                            <label for="">Nationaliy</label>
+                            <input id="nationality" type="text">
+                        </div>
+
+                        <div class="gender">
+                            <label for="">Gender</label>
+                            <select id='gender' name="" id="">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- id card -->
+                    <div class="id_number">
+                        <label for="">ID Card Number</label>
+                        <div class="id_card">
+                            <input id="id" type="text" placeholder="ID">
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="contact">
+                        <label for="">Phone Number</label>
+                        <input id="phone_number" type="text">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="Email">
+                        <label for="">Email</label>
+                        <input id="email" type="text">
+                    </div>
+
+                     <!-- Qualification -->
+                    <div class="Qualification">
+                        <label for="">Qualification</label>
+                        <input id="qualification" type="text">
+                    </div>
+
+                    <!-- Address -->
+                    <div class="address">
+                        <label for="">Address</label>
+                        <input id="address" type="text">
+                    </div>
+                    <a href="./cv.html" id="submit">Submit</a>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input,select{
+    height: 5vh;
+    border-radius: 5px;
+
+}
+input::placeholder{
+    font-size: clamp(1rem,2vw,2rem);
+    padding-left: 5px;
+}
+select{
+    font-size: clamp(1rem,2vw,2rem);
+}
+label{
+    font-size: clamp(1.5rem,2vw,4rem);
+    color: white;
+}
+
+/****************** main_content ******************/
+.main_content{
+    text-align: center;
+}
+
+.cv_design{
+    width: 80%;
+    margin: 20px auto;
+    background-color: #004b80;
+    padding: 2rem 0;
+}
+.personal_info{
+    font-size: clamp(1.5rem,3vw,4rem);
+    text-align: center;
+    color: whitesmoke;
+    border-bottom: 2px solid #047cd2;
+}
+.cv_container{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+/**************** profile image ***************/
+.profile{
+    width: 30%;
+/* display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center; */
+
+}
+.profile_figure{
+    margin: 0;
+    width: 100%;
+}
+.profile_image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.image_file{
+    margin-top: 10px ;
+        font-size: clamp(1rem,2vw,2rem);
+
+}
+.content_container{
+    width: 50%;
+}
+
+/********************* name fields **************************/
+.input_field{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.first_name ,.last_name{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 50%;
+}
+
+/*********************** description box  ****************************/
+.description{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.description_area{
+    width: 100%;
+    height: 100%;
+}
+
+/********************************* date0f birth *************************/
+.dateofbirth{
+margin-top: 30px;
+}
+.dateofbirth label{
+margin-right: 10px;
+}
+
+
+/********************************* place of birth *************************/
+
+.placeofbirth{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.placeofbirth label{
+    margin-right: 6px;
+}
+.place_name{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    gap: 30px;
+}
+.place_name input{
+    width: 50%;
+}
+
+
+/********************************* nationality  *************************/
+.gender_info{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+    
+.nationality{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nationality{
+    width: 60%;
+}
+.gender{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 38%;
+}
+#gender{
+    width: 50%;
+}
+/****************** id card info *************************/
+.id_number{
+    margin-top: 30px;
+}
+
+/************** contact ***********************/ /************** Email***********************/
+.contact,.Email,.address,.Qualification{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact input ,.Email input,.Qualification input,#id{
+    width: 60%;
+}
+
+
+/************* submit ********************/
+
+#submit{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    text-decoration: none;
+    height: fit-content;
+    width: fit-content;
+    padding: .25rem .75rem;
+    color: white;
+    background-color: #047cd2;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: clamp(1.5rem,2vw,2rem);
+
+}
+
+
+@media(max-width:992px){
+.cv_container{
+    flex-direction: column;
+}
+.profile{
+    width: 30%;
+margin: 0 auto;
+}
+.content_container{
+    width: 80%;
+    margin: 0 auto;
+}
+}
+
+@media (max-width:600px){
+    .profile{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .input_field{
+        flex-direction: column;
+    }
+    .first_name, .last_name {
+        width: 100%;
+    }
+    .place_name{
+        flex-direction: column;
+    }
+.place_name input{
+    width: 100%;
+}
+
+.gender_info{
+    flex-direction: column;
+    gap: 0;
+}
+.nationality{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+#nationality{
+    width: 100%;
+}
+.gender{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+        align-items: flex-start;
+
+}
+#gender{
+    width: 30%;
+}
+.contact input, .Email input, .Qualification input {
+    width: 100%;
+}
+.id_card,#id{
+    width: 100%;
+}
+}
